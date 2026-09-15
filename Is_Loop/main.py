@@ -44,7 +44,7 @@ if not os.path.isdir(input_dir):
     raise FileNotFoundError(f"Input directory not found: {input_dir}")
 
 dump_files = sorted(
-    glob.glob(os.path.join(input_dir, "*_PR.*.dump")),
+    glob.glob(os.path.join(input_dir, "*.dump")),
     key=natural_sort_key,
 )
 
